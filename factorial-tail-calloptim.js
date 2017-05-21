@@ -11,6 +11,11 @@ function factorial (n){
      return n*(factorial(n-1));
 }
 
+/**
+ * Optimized stack
+ * @param {*} n 
+ * @param {*} p 
+ */
 function optimizedFactorial(n, p=1){
     if(n<=1){
         return 1*p;
