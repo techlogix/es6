@@ -13,3 +13,8 @@ The source code examples are structured as follows:
 ## Promises
 ## Sandbox
 ## Symbols
+
+# GIT RECIPE
+## Remove files that are still hanging around after a refactor-move 
+git ls-files --deleted
+git rm `git ls-files --deleted`

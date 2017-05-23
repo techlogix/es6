@@ -1,7 +1,12 @@
 'use strict';
 /**
- * Tail call unoptimized
+ * Two examples - a tail call unoptimized and a tail call optimized.
+ * Best practice:
+ * Avoid access to variables in current stack frame.
+ * No calculations after tail call returns
+ * Return the function value as the return of the stack frame
  */
+ 
 
 function factorial (n){
     if (n<1)

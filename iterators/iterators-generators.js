@@ -3,6 +3,7 @@
  * for loops are old school and wasteful/
  * I've written then commented out functionally correct but not the ideal way.
  * Note: yeild is like a return statement. It cannot cross functional boundaries.
+ * GENERATOR: a special function that returns an iterator.
  */
 function *daysOfWeek(){
     let days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
@@ -28,7 +29,8 @@ function *daysOfWeek(){
     
 
 }
-let i=daysOfWeek();
+
+let iterator=daysOfWeek();// Iterator.
 
 
 /**
@@ -41,7 +43,8 @@ for (;;){
  */
 while(true)
 {
-    let v=i.next();
-    if(v.value === undefined) break;
-    console.log(v.value);
+    let item=iterator.next();
+    if(item.value === undefined) break;
+    console.log(item.value);
+    
 }

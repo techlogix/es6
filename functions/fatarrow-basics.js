@@ -29,9 +29,3 @@ multiply(5,6);
 //this will invoke the function after the timeout
 setTimeout(printBacon,1000);
 
-//Tail call optimization
-/**
- * Avoid access to variables in current stack frame.
- * No calculations after tail call returns
- * Return the function value as the return of the stack frame
- */
