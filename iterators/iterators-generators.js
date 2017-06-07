@@ -6,45 +6,19 @@
  * GENERATOR: a special function that returns an iterator.
  */
 function *daysOfWeek(){
-    let days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-    /**
-     * The 'old school' way 
-    for(let a=0;a<days.length;a++){
-        yield days[a];
-    }
-     */
+    const days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
     for (let n of days){
         yield n;
     }
-    /**
-     * This is also valid functionally - but obviously not the way to do it.
-     */
-    //yield "Monday";
-    //yield "Tuesday";
-    //yield "Wednesday";
-    //yield "Thursday";
-    //yield "Friday";
-    //yield "Saturday";
-    //yield "Sunday";
-    
-
 }
 
-let iterator=daysOfWeek();// Iterator.
+let days=daysOfWeek();// Iterator.
 
 
-/**
- * for loop - but prefer a while loop instead
-for (;;){
-    let v=i.next();
-    if(v.value === undefined) break;
-    console.log(v.value);
-}
- */
-while(true)
+while(days)//also check for iterators not being null;
 {
-    let item=iterator.next();
-    if(item.value === undefined) break;
-    console.log(item.value);
+    let day=days.next();
+    if(day.value === undefined) break;
+    console.log(day.value);
     
 }
