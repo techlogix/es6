@@ -20,6 +20,6 @@ git ls-files --deleted
 git rm `git ls-files --deleted`
 
 # Node Tips
-[10 Tips  for Faster Node JS](https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/)
-[10 Node Best Practices](https://www.sitepoint.com/node-js-best-practices-from-the-node-gurus/)
-[7 Tips for Node](https://medium.com/@faisalabid/7-tips-for-a-node-js-padawan-e7c0b0e5ce3c)
+### [10 Tips  for Faster Node JS](https://www.sitepoint.com/10-tips-make-node-js-web-app-faster/)
+### [10 Node Best Practices](https://www.sitepoint.com/node-js-best-practices-from-the-node-gurus/)
+### [7 Tips for Node](https://medium.com/@faisalabid/7-tips-for-a-node-js-padawan-e7c0b0e5ce3c)
