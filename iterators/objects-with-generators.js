@@ -1,6 +1,6 @@
 'use strict';
 
-let Driver = {
+let DrivingProfile = {
     drivingDays:["MON","WED","THU"],
     drivingRating:88,
     drivingDaysIterator:function *(){
@@ -10,7 +10,7 @@ let Driver = {
     }
 };
 
-let iterator =  Driver.drivingDaysIterator();
+let iterator =  DrivingProfile.drivingDaysIterator();
 
 while(true)
 {

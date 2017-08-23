@@ -5,3 +5,4 @@
  A generator is a special function that automatically creates an iterator.
  Encapsulating generators via delegation allows generator composition. 
  One pattern could be to use an iterator for asynchronous tasks when a ```Promise``` doesn't make sense.
+ 
