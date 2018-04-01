@@ -18,6 +18,9 @@ var printBacon=()=> console.log("Bacon is healthy!");
 let addition=(a,b) => console.log(a+b);
 let multiply=(a,b) => console.log(a*b);
 let divide=(a,b)=> console.log(a/b);
+let exponent = function (msg,a,b)  {
+    console.log(msg+": "+a**b)
+}
 
 
 //this will immediately call the function.
@@ -27,5 +30,6 @@ addition(5,6);
 
 multiply(5,6);
 //this will invoke the function after the timeout
-setTimeout(printBacon,1000);
-
+setTimeout(printBacon,2000)
+//setTimeout(exponent(2,4),1000);
+exponent ('Exponential ',2,4)
